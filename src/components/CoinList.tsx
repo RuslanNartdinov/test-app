@@ -9,14 +9,17 @@ import { RootState, AppDispatch } from "../store";
 const CoinList = () => {
   const data = useSelector((state: RootState) => state.coins);
   const dispatch = useDispatch<AppDispatch>()
-	console.log("render")
   React.useEffect(() => {
-	console.log("useEffect")
-    const handleAsync = async () => {
-      const recievedCoins = await getCoins(1);
-      dispatch(appendCoins(recievedCoins));
-    };
-    handleAsync();
+	if(data.coins.length < 1)
+	{
+
+		console.log("useEffect")
+		const handleAsync = async () => {
+		  const recievedCoins = await getCoins(1);
+		  dispatch(appendCoins(recievedCoins));
+		};
+		handleAsync();
+	}
   }, []);
 
   return (
