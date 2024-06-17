@@ -1,18 +1,19 @@
 import { IUserData } from "@/helpers/help";
 import { createSlice } from "@reduxjs/toolkit";
 import { PayloadAction } from "@reduxjs/toolkit";
+import { clear } from "console";
 
 interface UserState {
 	user: IUserData;
   }
   
-  const initialState: UserState = {
+  export const initialState: UserState = {
 	user: {
 		authed: false,
-		firstName : 'Ruslan',
-		lastName: 'Nartdinov',
-		age: 21,
-		email: 'nartdinov2020@gmail.com',
+		firstName : '',
+		lastName: '',
+		age: 0,
+		email: '',
 		image: ''
 	},
   };

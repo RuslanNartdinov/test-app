@@ -20,14 +20,14 @@ export default function MoreCoins (){
 		handleAsync();
 	}
 	return (
-		<div className="pt-3">
+		<div className="m-4 flex items-center justify-center">
 			{loading 
 			? 
-			(<div className="bg-sky-700 rounded-xl p-2" >
+			(<div className="flex items-center justify-center h-20 w-40 p-4 text-2xl bg-sky-800 rounded-xl" >
 				Wait...
 			</div>) 
 			: 
-				(<button className="bg-sky-600 rounded-xl p-2" onClick={handleClick}>
+				(<button className="flex items-center justify-center h-20 w-40 p-4 text-2xl bg-sky-600 rounded-xl" onClick={handleClick}>
 					Fetch More
 				</button>)
 			}

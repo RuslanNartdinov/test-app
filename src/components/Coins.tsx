@@ -8,7 +8,7 @@ import store from "../store"
 const Coins = () => {
 	return (
 		<Provider store={store}>
-			<div className="flex flex-col items-center justify-center">
+			<div className="relative h-auto w-full flex flex-col items-center justify-center m-auto">
 			<CoinList/>
 			<MoreCoins/>
 			</div>

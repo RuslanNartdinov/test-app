@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
 import coinsReducer from './features/dataSlice';
+import userReducer from "./features/userSlice"
 
 const store = configureStore({
   reducer: {
     coins: coinsReducer,
+	user: userReducer,
   },
 });
 
