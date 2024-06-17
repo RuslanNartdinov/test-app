@@ -4,7 +4,7 @@ import Profile from '@/components/Profile';
 import { Provider } from 'react-redux';
 import store from '@/store';
 
-const page = (props : {name : string, image : string, email : string}) => {
+const page = () => {
 	return (
 		<>
 		<Provider store={store}>

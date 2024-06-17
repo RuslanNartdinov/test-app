@@ -18,6 +18,8 @@ interface AuthProps {
 	const [valid, setValid] = React.useState<boolean>(false);
 	const [validInput, setValidInput] = React.useState<boolean>(true)
 	const dispatch = useDispatch();
+
+	console.log("Login: nartdinov2020@gmail.com \n Password: Your1234!");
   
 	const handleSubmit = async (event: React.FormEvent) => {
 	  event.preventDefault();
